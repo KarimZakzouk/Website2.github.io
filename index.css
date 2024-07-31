@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    text-align: center;
+    color: white;
+    background-color: rgb(124, 227, 124);
+}
+h1{
+    padding-top: 10px;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    margin: 20px;
+}
+li{
+    margin:0 20px 10px;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+.about h2{
+    margin: 10px;
+}
+.about p{
+    margin: 10px;
+}
+
+.projects-grid{
+    margin: 40px 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px, 1fr));
+}
+.project{
+    margin: 50px  auto;
+    text-align: center;
+
+}
+footer{
+    background-color:   black;
+    position: absolute;
+    color: white;
+    bottom: 0%;
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+}
