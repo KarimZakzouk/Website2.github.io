@@ -1,8 +1,12 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 body{
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 50px;
     background-color: rgb(182, 150, 150);
 }
 header{
@@ -11,8 +15,6 @@ header{
     text-align: center;
     color: white;
     animation: glowing 3s linear infinite;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
 }
 @keyframes glowing {
     0% {
@@ -36,7 +38,7 @@ ul{
     margin: 20px;
 }
 li{
-    margin:0 20px 10px;
+    margin:0 20px 20px;
 }
 a{
     text-decoration: none;
@@ -44,7 +46,6 @@ a{
     padding: 10px;
     border-radius: 10px;
     transition: ease-in-out 300ms;
-
 }
 a:hover{
     color:#ff0000;
@@ -55,24 +56,30 @@ a:hover{
     margin: 10px;
     background-color: pink;
     padding: 10px;
+    transition: 300ms ease-in-out;
+    border: 1px solid black;   
+}
+.about h2:hover{
     box-shadow: 0 0 10px 0 black;
-
 }
 .about p{
     color: black;
     font-size: 20px;
     margin: 10px;
     padding: 10px;
+    border:1px dashed black
 }
-
 .projects-grid{
     margin: 40px 10px;
     padding: 10px;
     background-color: rgb(244, 170, 141);
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(150px, 1fr));
+    grid-template-columns: repeat(4,minmax(150px, 1fr));
     color: black;
-    border: 1px solid black;
+    border: 1px solid black;    
+    transition: 300ms ease-in-out;
+}
+.projects-grid:hover{
     box-shadow: 0 0 10px 0 black;
 }
 .project{
@@ -81,15 +88,16 @@ a:hover{
     background-color: gray;
     color: white;
     border: 1px dotted black;
-    box-shadow: 0 0 10px 0 black;
-
+    transition: 300ms ease-in-out;
 }
-footer{
-    background-color:   black;
-    position: absolute;
+.project:hover{
+    background-color: rgb(77, 77, 77);
+    box-shadow: 0 0 10px 0 black;
+}
+footer {
+    background-color: black;
     color: white;
-    bottom: 0%;
-    width: 100%;
     padding: 5px 0;
     text-align: center;
+    width: 100%;
 }
