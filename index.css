@@ -74,7 +74,7 @@ a:hover{
     padding: 10px;
     background-color: rgb(244, 170, 141);
     display: grid;
-    grid-template-columns: repeat(4,minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit,minmax(150px, 1fr));
     color: black;
     border: 1px solid black;    
     transition: 300ms ease-in-out;
